@@ -3,7 +3,7 @@ streamlit==1.30.0
 streamlit_option_menu==0.3.12
 streamlit-carousel==0.0.4
 streamlit-lottie==0.0.5
-sklearn==1.4.0
+scikit-learn==1.4.0
 matplotlib==3.8.2
 numpy==1.26.3
 requests==2.31.0
