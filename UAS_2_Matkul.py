@@ -135,7 +135,7 @@ if selected == "Detect":
     
     Ml = st.selectbox(
             'Pilih model machine learning',
-            ('Random Forest', 'Decision Tree', 'LGBM'))
+            ('Random Forest', 'Decision Tree', 'LBGM'))
     
     if(Ml=='Random Forest'):
         model = RandomForest
@@ -143,7 +143,7 @@ if selected == "Detect":
     if(Ml=='Decision Tree'):
         model = DecisionTree
     
-    if(Ml=='LGBM'):
+    if(Ml=='LBGM'):
         model = LightBGM
     
     url_input = st.text_input("Masukkan URL:")
