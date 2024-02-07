@@ -85,7 +85,7 @@ if selected == "Detect":
     st.title(":globe_with_meridians: Halaman Deteksi")
     RandomForest = pickle.load(open('finalized_model.h5', 'rb'))
     DecisionTree = pickle.load(open('finalized_modelDt.h5', 'rb'))
-    LightBGM = pickle.load(open('finalized_modelLg.h5', 'rb'))
+    lbgm = pickle.load(open('finalized_modelLg.h5', 'rb'))
     df = pd.read_csv('./webphising.csv')
     vectorizer = CountVectorizer()
     url_vectorized_train = vectorizer.fit_transform(df['URL'])
@@ -144,7 +144,7 @@ if selected == "Detect":
         model = DecisionTree
     
     if(Ml=='LBGM'):
-        model = LightBGM
+        model = lbgm
     
     url_input = st.text_input("Masukkan URL:")
 
